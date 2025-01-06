@@ -158,14 +158,7 @@ addressInput.addEventListener("input", function(event){
 
 checkoutBtn.addEventListener("click", function(){
 
-    if(cart.length === 0)return
-
-    if(addressInput.value ===""){
-        addressWarn.classList.remove("hidden")
-        addressInput.classList.add("border-red-500")
-        return
-    }
-
+    
     const cartItems = cart.map((item)=>{
         return(
             `${item.name} Quantidade: (${item.quantity}) Preço: R$ ${item.price} |`
