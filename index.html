@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"/>
+
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -33,167 +35,169 @@
         <h2>Conheça nosso menu</h2>
     </section>
 
-    <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gab-10 mx-auto max-w-7xl px-2 mb16">
+    <section id="menu">
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gab-10 mx-auto max-w-7xl px-2 mb16" >
 
-        <div class="flex gap-2">
-           <img 
-                src="assets/img/hamb-1.png" 
-                alt="hamburguer"
-                class="w-28 h-28 rounded-lg hover:scale-110 hover:-rotate-2 duration-300"
-           />
-           <div>
-               <p class="font-bold"> hamburguer Smash</p>
-               <p class="text-sm"> um saboroso blend que utiliza uma técnica de preparo simples, na qual basta esmagar o burger contra a chapa ou frigideira para dar o toque especial de caramelização na carne</p>
-               
-               <div class="flex items-center gap-2 justify-between mt-4">
-                   <p class="font-bold text-lg" > R$ 18.90</p>
-                   <button 
-                       class=" bg-gray-900 px-5 rounded add-to-cart-btn"
-                       data-name="hamburguer Smash"
-                       data-price="18.90"
-                       >
-                       <i class="fa-solid fa-cart-plus text-lg text-white" ></i>
-                   </button>
-               </div>
-
-           </div>
-        </div>
-
-        <div class="flex gap-2">
+            <div class="flex gap-2">
             <img 
-                src="assets/img/hamb-2.png" 
-                alt="hamburguer"
-                class="w-28 h-28 rounded-lg hover:scale-110 hover:-rotate-2 duration-300"
+                    src="assets/img/hamb-1.png" 
+                    alt="hamburguer"
+                    class="w-28 h-28 rounded-lg hover:scale-110 hover:-rotate-2 duration-300"
             />
-           
             <div>
-                <p class="font-bold"> hamburguer Duplo</p>
+                <p class="font-bold"> hamburguer Smash</p>
                 <p class="text-sm"> um saboroso blend que utiliza uma técnica de preparo simples, na qual basta esmagar o burger contra a chapa ou frigideira para dar o toque especial de caramelização na carne</p>
-               
+                
                 <div class="flex items-center gap-2 justify-between mt-4">
-                    <p class="font-bold text-lg" > R$ 32.90</p>
+                    <p class="font-bold text-lg" > R$ 18.90</p>
                     <button 
-                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                        data-name="hamburguer Duplo"
-                        data-price="32.90"
+                        class=" bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="hamburguer Smash"
+                        data-price="18.90"
                         >
                         <i class="fa-solid fa-cart-plus text-lg text-white" ></i>
                     </button>
                 </div>
-            </div>      
-        </div>
-        <div class="flex gap-2">
-            <img 
-                src="assets/img/hamb-3.png" 
-                alt="hamburguer Salad"
-                class="w-28 h-28 rounded-lg hover:scale-110 hover:-rotate-2 duration-300"
-            />
-           
-            <div>
-                <p class="font-bold"> hamburguer Salad</p>
-                <p class="text-sm"> um saboroso blend que utiliza uma técnica de preparo simples, na qual basta esmagar o burger contra a chapa ou frigideira para dar o toque especial de caramelização na carne</p>
-               
-                <div class="flex items-center gap-2 justify-between mt-4">
-                    <p class="font-bold text-lg" > R$ 35.90</p>
-                    <button 
-                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                        data-name="hamburguer Salad"
-                        data-price="35.90"
-                        >
-                        <i class="fa-solid fa-cart-plus text-lg text-white" ></i>
-                    </button>
-                </div>
-            </div>      
-        </div>
-        <div class="flex gap-2">
-            <img 
-                src="assets/img/hamb-4.png" 
-                alt="hamburguer da casa"
-                class="w-28 h-28 rounded-lg hover:scale-110 hover:-rotate-2 duration-300"
-            />
-           
-            <div>
-                <p class="font-bold"> hamburguer da casa</p>
-                <p class="text-sm"> um saboroso blend que utiliza uma técnica de preparo simples, na qual basta esmagar o burger contra a chapa ou frigideira para dar o toque especial de caramelização na carne</p>
-               
-                <div class="flex items-center gap-2 justify-between mt-4">
-                    <p class="font-bold text-lg" > R$ 30.90</p>
-                    <button 
-                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                        data-name="hamburguer da casa"
-                        data-price="30.90"
-                        >
-                        <i class="fa-solid fa-cart-plus text-lg text-white" ></i>
-                    </button>
-                </div>
-            </div>      
-        </div>
-   </main>
 
-   <div class="mx-auto max-w-7xl px-2 my-2">
-        <h2 class="font-bold text-3xl">Bebidas</h2>
-   </div>
+            </div>
+            </div>
 
-   <section class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gab-10 mx-auto max-w-7xl px-2  mb16" id="menu">
-        <div class="flex gap-2 w-full">
-            <img 
-                src="assets/img/refri-1.png" 
-                alt="Coca lata"
-                class="w-28 h-28 rounded-lg hover:scale-110 hover:-rotate-2 duration-300"
-            />
-        
-            <div class="w-full">
-                <p class="font-bold">Coca lata </p>
-                <p class="text-sm"> Lata de 300ml</p>
+            <div class="flex gap-2">
+                <img 
+                    src="assets/img/hamb-2.png" 
+                    alt="hamburguer"
+                    class="w-28 h-28 rounded-lg hover:scale-110 hover:-rotate-2 duration-300"
+                />
             
-                <div class="flex items-center gap-2 justify-between mt-4">
-                    <p class="font-bold text-lg" > R$6.90</p>
-                    <button 
-                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                        data-name="Coca lata"
-                        data-price="6.90"
-                        >
-                        <i class="fa-solid fa-cart-plus text-lg text-white" ></i>
-                    </button>
-                </div>
-            </div>      
-        </div>
-
-        <div class="flex gap-2 w-full">
-            <img 
-                src="assets/img/refri-2.png" 
-                alt="Guarana lata"
-                class="w-28 h-28 rounded-lg hover:scale-110 hover:-rotate-2 duration-300"
-            />
-        
-            <div class="w-full">
-                <p class="font-bold">Guarana lata</p>
-                <p class="text-sm"> Lata de 300ml</p>
+                <div>
+                    <p class="font-bold"> hamburguer Duplo</p>
+                    <p class="text-sm"> um saboroso blend que utiliza uma técnica de preparo simples, na qual basta esmagar o burger contra a chapa ou frigideira para dar o toque especial de caramelização na carne</p>
+                
+                    <div class="flex items-center gap-2 justify-between mt-4">
+                        <p class="font-bold text-lg" > R$ 32.90</p>
+                        <button 
+                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                            data-name="hamburguer Duplo"
+                            data-price="32.90"
+                            >
+                            <i class="fa-solid fa-cart-plus text-lg text-white" ></i>
+                        </button>
+                    </div>
+                </div>      
+            </div>
+            <div class="flex gap-2">
+                <img 
+                    src="assets/img/hamb-3.png" 
+                    alt="hamburguer Salad"
+                    class="w-28 h-28 rounded-lg hover:scale-110 hover:-rotate-2 duration-300"
+                />
             
-                <div class="flex items-center gap-2 justify-between mt-4">
-                    <p class="font-bold text-lg" > R$6.90</p>
-                    <button 
-                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                        data-name="Guarana lata"
-                        data-price="6.90"
-                        >
-                        <i class="fa-solid fa-cart-plus text-lg text-white" ></i>
-                    </button>
-                </div>
-            </div>      
-        </div>
-   </section> <br><br><br><br>
-    <section>
+                <div>
+                    <p class="font-bold"> hamburguer Salad</p>
+                    <p class="text-sm"> um saboroso blend que utiliza uma técnica de preparo simples, na qual basta esmagar o burger contra a chapa ou frigideira para dar o toque especial de caramelização na carne</p>
+                
+                    <div class="flex items-center gap-2 justify-between mt-4">
+                        <p class="font-bold text-lg" > R$ 35.90</p>
+                        <button 
+                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                            data-name="hamburguer Salad"
+                            data-price="35.90"
+                            >
+                            <i class="fa-solid fa-cart-plus text-lg text-white" ></i>
+                        </button>
+                    </div>
+                </div>      
+            </div>
+            <div class="flex gap-2">
+                <img 
+                    src="assets/img/hamb-4.png" 
+                    alt="hamburguer da casa"
+                    class="w-28 h-28 rounded-lg hover:scale-110 hover:-rotate-2 duration-300"
+                />
+            
+                <div>
+                    <p class="font-bold"> hamburguer da casa</p>
+                    <p class="text-sm"> um saboroso blend que utiliza uma técnica de preparo simples, na qual basta esmagar o burger contra a chapa ou frigideira para dar o toque especial de caramelização na carne</p>
+                
+                    <div class="flex items-center gap-2 justify-between mt-4">
+                        <p class="font-bold text-lg" > R$ 30.90</p>
+                        <button 
+                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                            data-name="hamburguer da casa"
+                            data-price="30.90"
+                            >
+                            <i class="fa-solid fa-cart-plus text-lg text-white" ></i>
+                        </button>
+                    </div>
+                </div>      
+            </div>
+        </main>
+
+            <div class="mx-auto max-w-7xl px-2 my-2">
+                    <h2 class="font-bold text-3xl">Bebidas</h2>
+            </div>
+
+            <section class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gab-10 mx-auto max-w-7xl px-2  mb16" >
+                    <div class="flex gap-2 w-full" id="menu">
+                        <img 
+                            src="assets/img/refri-1.png" 
+                            alt="Coca lata"
+                            class="w-28 h-28 rounded-lg hover:scale-110 hover:-rotate-2 duration-300"
+                        />
+                    
+                        <div class="w-full">
+                            <p class="font-bold">Coca lata </p>
+                            <p class="text-sm"> Lata de 300ml</p>
+                        
+                            <div class="flex items-center gap-2 justify-between mt-4">
+                                <p class="font-bold text-lg" > R$6.90</p>
+                                <button 
+                                    class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                    data-name="Coca lata"
+                                    data-price="6.90"
+                                    >
+                                    <i class="fa-solid fa-cart-plus text-lg text-white" ></i>
+                                </button>
+                            </div>
+                        </div>      
+                    </div>
+
+                    <div class="flex gap-2 w-full">
+                        <img 
+                            src="assets/img/refri-2.png" 
+                            alt="Guarana lata"
+                            class="w-28 h-28 rounded-lg hover:scale-110 hover:-rotate-2 duration-300"
+                        />
+                    
+                        <div class="w-full">
+                            <p class="font-bold">Guarana lata</p>
+                            <p class="text-sm"> Lata de 300ml</p>
+                        
+                            <div class="flex items-center gap-2 justify-between mt-4">
+                                <p class="font-bold text-lg" > R$6.90</p>
+                                <button 
+                                    class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                    data-name="Guarana lata"
+                                    data-price="6.90"
+                                    >
+                                    <i class="fa-solid fa-cart-plus text-lg text-white" ></i>
+                                </button>
+                            </div>
+                        </div>      
+                    </div>
+            </section> <br><br><br><br>
+                <section>
+            </section>
     </section>
+    
 
-
-   <div class="bg-black/50 w-full h-full fixed top-0 left-0 z-[99]  items-center justify-center hidden">
+   <div class="bg-black/50 w-full h-full fixed top-0 left-0 z-[99]  items-center justify-center hidden" id="cart-modal">
      <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
         <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
 
         <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
 
-        <p class="font-bold">Total: <span>0.00</span></p>
+        <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
         <p class="font-bold mt-4">Endereço de entrega</p>
         <input 
             type="text"
@@ -219,7 +223,8 @@
     </button>
    </footer>
 
-        
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+   <script src="script.js"></script>     
         
 </body>
 </html>
