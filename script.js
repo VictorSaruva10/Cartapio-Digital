@@ -157,22 +157,22 @@ addressInput.addEventListener("input", function(event){
 })
 
 checkoutBtn.addEventListener("click", function(){
-   // const isOpen = checkOpen()
-    //if(!isOpen){
+    const isOpen = checkOpen()
+    if(!isOpen){
         
-       // Toastify({
-           // text: "O restaurante esta fechado",
-           // duration: 3000,
-            //close: true,
-            //gravity: "top", // `top` or `bottom`
-           // position: "right", // `left`, `center` or `right`
-            //stopOnFocus: true, // Prevents dismissing of toast on hover
-           // style: {
-          //    background: "#ef4444",
-         //   },
-       // }).showToast()
-        //return
-    //}
+        Toastify({
+            text: "O restaurante esta fechado",
+            duration: 3000,
+            close: true,
+            gravity: "top", // `top` or `bottom`
+           position: "right", // `left`, `center` or `right`
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            style: {
+              background: "#ef4444",
+            },
+        }).showToast()
+        return
+    }
 
     if(cart.length === 0)return
 
@@ -203,7 +203,7 @@ checkoutBtn.addEventListener("click", function(){
 function checkOpen(){
     const data = new Date()
     const hora = data.getHours()
-    //return hora >= 18 && hora <22
+    return hora >= 8 && hora <23
 }
 
 const SpanItem = document.getElementById("date-span")
