@@ -157,8 +157,31 @@ addressInput.addEventListener("input", function(event){
 })
 
 checkoutBtn.addEventListener("click", function(){
+   // const isOpen = checkOpen()
+    //if(!isOpen){
+        
+       // Toastify({
+           // text: "O restaurante esta fechado",
+           // duration: 3000,
+            //close: true,
+            //gravity: "top", // `top` or `bottom`
+           // position: "right", // `left`, `center` or `right`
+            //stopOnFocus: true, // Prevents dismissing of toast on hover
+           // style: {
+          //    background: "#ef4444",
+         //   },
+       // }).showToast()
+        //return
+    //}
 
-    
+    if(cart.length === 0)return
+
+    if(addressInput.value ===""){
+        addressWarn.classList.remove("hidden")
+        addressInput.classList.add("border-red-500")
+        return
+    }
+
     const cartItems = cart.map((item)=>{
         return(
             `${item.name} Quantidade: (${item.quantity}) Preço: R$ ${item.price} |`
